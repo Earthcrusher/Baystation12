@@ -289,6 +289,13 @@ proc/populate_gear_list()
 	slot = slot_w_uniform
 	cost = 3
 
+// Custom item by Earthcrusher! I am very sorry if this is in the wrong place
+/datum/gear/philosopher_wig
+	display_name = "natural philosopher's wig"
+	path = /obj/item/clothing/head/philosopher_wig
+	cost = 3
+	slot = slot_head
+
 /datum/gear/uniform_captain
 	display_name = "captain's dress uniform"
 	path = /obj/item/clothing/under/dress/dress_cap

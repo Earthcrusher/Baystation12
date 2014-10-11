@@ -1,6 +1,9 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 506.1247
+DIR: code code\datums code\datums\diseases code\datums\diseases\advance code\datums\diseases\advance\symptoms code\defines\obj code\defines\procs code\game code\game\gamemodes\cult code\modules code\modules\client code\modules\clothing code\modules\clothing\head code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal config\names icons icons\obj icons\obj\clothing 
+LAST_COMPILE_TIME: 1413006807
 AUTO_FILE_DIR: OFF
 */
 // END_INTERNALS
