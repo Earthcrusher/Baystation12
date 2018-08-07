@@ -148,3 +148,52 @@ Each plays slightly different and has different challenges/benefits
 /datum/god_form/wizard/take_charge(var/mob/living/user, var/charge)
 	linked_god.adjust_power_min(max(round(charge/100), 1),silent = 1)
 	return 1
+
+/datum/god_form/superconductor
+	name = "Superconductor"
+	info = {"This demonic AI was left unchecked, allowed to reinterpret and twist its own architecture over the course of countless centuries. Now it is a warped and power-hungry being, hellbent on the assimilation of all carbon life.<br>
+	<b>Benefits:</b><br>
+		<font color='blue'>+Numerous passive abilities to enhance your followers physically.<br>
+		+Power is gained and maintained through the manipulation of electricity.<br>
+		+Resilient power scheme; can't be shut down via destruction of structures.</font><br>
+	<b>Drawbacks:</b><br>
+		<font color='red'>-Followers must continually drain electricity to maintain your power.<br>
+		-Gameplay makes stealth virtually impossible.
+		-Your cult will be highly vulnerable to EMP until you have amassed power.</font>
+	"}
+	desc = "Deus Ex Machina; I of the Radio; the Maschinekrieg"
+	god_icon_state = "maschinengott"
+	pylon_icon_state = "god" // REPLACE
+
+	buildables = list(/obj/structure/deity/altar = list("icon_state" = "tomealtar"),
+					/obj/structure/deity/pylon,
+					/obj/structure/deity/wizard_recharger
+					)
+	items = list(/datum/deity_item/general/potential,
+				/datum/deity_item/general/regeneration,
+				/datum/deity_item/conjuration,
+				/datum/deity_item/boon/single_charge/create_air,
+				/datum/deity_item/boon/single_charge/acid_spray,
+				/datum/deity_item/boon/single_charge/force_wall,
+				/datum/deity_item/phenomena/dimensional_locker,
+				/datum/deity_item/boon/single_charge/faithful_hound,
+				/datum/deity_item/wizard_armaments,
+				/datum/deity_item/boon/single_charge/sword,
+				/datum/deity_item/boon/single_charge/shield,
+				/datum/deity_item/phenomena/portals,
+				/datum/deity_item/boon/single_charge/fireball,
+				/datum/deity_item/boon/single_charge/force_portal,
+				/datum/deity_item/phenomena/banishing_smite,
+				/datum/deity_item/transmutation,
+				/datum/deity_item/boon/single_charge/slippery_surface,
+				/datum/deity_item/boon/single_charge/smoke,
+				/datum/deity_item/boon/single_charge/knock,
+				/datum/deity_item/boon/single_charge/burning_grip,
+				/datum/deity_item/phenomena/warp_body,
+				/datum/deity_item/boon/single_charge/jaunt,
+				/datum/deity_item/healing_spells,
+				/datum/deity_item/boon/single_charge/heal,
+				/datum/deity_item/boon/single_charge/heal/major,
+				/datum/deity_item/boon/single_charge/heal/area,
+				/datum/deity_item/phenomena/rock_form
+				)
